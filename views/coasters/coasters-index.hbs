@@ -1,0 +1,19 @@
+<div class="container coasters-index">
+
+  <a href="/coasters/new" class="btn btn-dark">Crear nueva montaña rusa</a>
+
+  <h1 style="font-weight: 100">Índice de montañas rusas</h1>
+
+
+  {{#each coasters}}
+  <a href="/coasters/{{_id}}" class="btn btn-sm btn-dark">Ver detalles</a>
+  <h4>{{name}}</h4>
+  <p>{{description}}</p>
+  <small><strong>Longitud: </strong> {{length}}m | <strong>Inversiones: </strong> {{inversions}} | <strong>Parque:
+    </strong> {{park.name}}</small>
+  <hr>
+  {{/each}}
+
+
+
+</div>
